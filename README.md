@@ -4,7 +4,7 @@ Low resource graphical user interface for Atmega328 using an SH1106 SPI OLED dis
 
 
 * Made from scratch 
-* Since fonts could take a huge amount of FLASH memory, this program can enlarge regular fonts (8x5 bit) to 2X, 3X and 4X size at run time. Since there are 94 chars, at 5 bytes per char, this uses 320 bytes. Having a 2X font in FLASH memory would take 4x320 bytes and 3X and 4X would take 9x320 and 16x320 bytes respectively (almost 10kB of FLASH).
+* Storing fonts could take a huge amount of FLASH memory, so this program can enlarge regular fonts (8x5 bit) to 2X, 3X and 4X size at run time. Since there are 94 chars, at 5 bytes per char, this uses 320 bytes. Having a 2X font in FLASH memory would take extra 1280 bytes and 3X and 4X would take 2880 and 5120 bytes respectively (almost 10kB of FLASH).
 * Using menus and OLED text driver with font enlargement takes around 5kB of FLASH memory, depending on the amount of menu options.  
 * Using menus and OLED text driver without font enlargement would take around 3.5kB.
 * No menus nor font enlargement takes 1.5kB. This may be useful as a simple debugging tool. 
