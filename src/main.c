@@ -18,7 +18,7 @@
 
 void process_GUI_controls(void);
 
-/* Global variables that can be reached by menues. */
+/* Global variables that can be reached by menus. */
 volatile int testdata = 9;
 	
 
