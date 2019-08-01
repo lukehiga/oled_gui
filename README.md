@@ -10,5 +10,6 @@ Low resource graphical user interface for Atmega328 using a SH1106 SPI OLED disp
 * Doesn't use interrupts or timers since these may be used for something more important. Polling speed should be fast enough to detect a falling edge of input A and check if input B is still high or it was low before at the time of the falling edge. 
 * By using a couple of 100nF capacitors on the encoder outputs there seems to be no bouncing, so no debouncing algorithm used (KY-040 uses 10k pullup resistors which would give a time constant of 1ms). 
 
-![image](https://user-images.githubusercontent.com/49129967/62314839-5cebc880-b46a-11e9-983e-b1eb08d6e9cd.jpg)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/49129967/62314839-5cebc880-b46a-11e9-983e-b1eb08d6e9cd.jpg">
+</p>
