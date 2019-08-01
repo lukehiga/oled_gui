@@ -27,8 +27,6 @@ void spi_init(void)
 
 	PORTB |= (1<<PB2); /* HIGH IDLE */
 	
-	/* CPOL = 1 CPHA = 1 (mode 3) as specified in the oled datasheet (pp9 sh1106 datasheet)*/
-	/* DORD = 0, as MSB is transmitted first*/
 	SPCR |= (1<<SPE)/*|(1<<DORD)*/|(1<<MSTR);/*|(1<<SPR1)*///|(1<<SPR0);
 	SPCR |= (1<<CPHA);
 	SPCR |= (1<<CPOL);
